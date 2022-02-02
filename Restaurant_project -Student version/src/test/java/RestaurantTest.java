@@ -4,9 +4,12 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalTime;
 
 import static org.junit.jupiter.api.Assertions.*;
+import java.util.ArrayList;
+import java.util.List;
 
 class RestaurantTest {
     Restaurant restaurant;
+    List<Item> items = new ArrayList<Item>();
     public void restaurant_is_added_for_testing(){
         LocalTime openingTime = LocalTime.parse("10:30:00");
         LocalTime closingTime = LocalTime.parse("22:00:00");
