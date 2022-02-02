@@ -55,4 +55,16 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    //>>>>>>>>>>>>>>>>>>>>>>>>>>>TOTAL ORDER VALUE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    @Test
+
+    public void total_order_value_should_get_total_amount_when_items_are_selected(){
+        restaurant_is_added_for_testing();
+        items = restaurant.getMenu();
+        assertEquals(388,restaurant.getTotalOrderValue(items));
+    }
+
+    //<<<<<<<<<<<<<<<<<<<<<<<TOTAL ORDER VALUE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
 }
